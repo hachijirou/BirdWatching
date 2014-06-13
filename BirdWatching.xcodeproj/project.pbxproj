@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5A5574E194AA405004F9CBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A5574D194AA405004F9CBC /* Foundation.framework */; };
+		D5A55750194AA405004F9CBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A5574F194AA405004F9CBC /* CoreGraphics.framework */; };
+		D5A55752194AA405004F9CBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A55751194AA405004F9CBC /* UIKit.framework */; };
+		D5A55758194AA405004F9CBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5A55756194AA405004F9CBC /* InfoPlist.strings */; };
+		D5A5575A194AA405004F9CBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A55759194AA405004F9CBC /* main.m */; };
+		D5A5575E194AA405004F9CBC /* BirdsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A5575D194AA405004F9CBC /* BirdsAppDelegate.m */; };
+		D5A55761194AA405004F9CBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A5575F194AA405004F9CBC /* Main.storyboard */; };
+		D5A55764194AA405004F9CBC /* BirdsMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A55763194AA405004F9CBC /* BirdsMasterViewController.m */; };
+		D5A55767194AA405004F9CBC /* BirdsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A55766194AA405004F9CBC /* BirdsDetailViewController.m */; };
+		D5A55769194AA405004F9CBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5A55768194AA405004F9CBC /* Images.xcassets */; };
+		D5A55770194AA405004F9CBC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A5576F194AA405004F9CBC /* XCTest.framework */; };
+		D5A55771194AA405004F9CBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A5574D194AA405004F9CBC /* Foundation.framework */; };
+		D5A55772194AA405004F9CBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A55751194AA405004F9CBC /* UIKit.framework */; };
+		D5A5577A194AA405004F9CBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5A55778194AA405004F9CBC /* InfoPlist.strings */; };
+		D5A5577C194AA405004F9CBC /* BirdWatchingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A5577B194AA405004F9CBC /* BirdWatchingTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5A55773194AA405004F9CBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5A55742194AA405004F9CBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5A55749194AA405004F9CBC;
+			remoteInfo = BirdWatching;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D5A5574A194AA405004F9CBC /* BirdWatching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdWatching.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A5574D194AA405004F9CBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D5A5574F194AA405004F9CBC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D5A55751194AA405004F9CBC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D5A55755194AA405004F9CBC /* BirdWatching-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BirdWatching-Info.plist"; sourceTree = "<group>"; };
+		D5A55757194AA405004F9CBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D5A55759194AA405004F9CBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D5A5575B194AA405004F9CBC /* BirdWatching-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BirdWatching-Prefix.pch"; sourceTree = "<group>"; };
+		D5A5575C194AA405004F9CBC /* BirdsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BirdsAppDelegate.h; sourceTree = "<group>"; };
+		D5A5575D194AA405004F9CBC /* BirdsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BirdsAppDelegate.m; sourceTree = "<group>"; };
+		D5A55760194AA405004F9CBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5A55762194AA405004F9CBC /* BirdsMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BirdsMasterViewController.h; sourceTree = "<group>"; };
+		D5A55763194AA405004F9CBC /* BirdsMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BirdsMasterViewController.m; sourceTree = "<group>"; };
+		D5A55765194AA405004F9CBC /* BirdsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BirdsDetailViewController.h; sourceTree = "<group>"; };
+		D5A55766194AA405004F9CBC /* BirdsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BirdsDetailViewController.m; sourceTree = "<group>"; };
+		D5A55768194AA405004F9CBC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D5A5576E194AA405004F9CBC /* BirdWatchingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdWatchingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A5576F194AA405004F9CBC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D5A55777194AA405004F9CBC /* BirdWatchingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BirdWatchingTests-Info.plist"; sourceTree = "<group>"; };
+		D5A55779194AA405004F9CBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D5A5577B194AA405004F9CBC /* BirdWatchingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BirdWatchingTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5A55747194AA405004F9CBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A55750194AA405004F9CBC /* CoreGraphics.framework in Frameworks */,
+				D5A55752194AA405004F9CBC /* UIKit.framework in Frameworks */,
+				D5A5574E194AA405004F9CBC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5A5576B194AA405004F9CBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A55770194AA405004F9CBC /* XCTest.framework in Frameworks */,
+				D5A55772194AA405004F9CBC /* UIKit.framework in Frameworks */,
+				D5A55771194AA405004F9CBC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5A55741194AA405004F9CBC = {
+			isa = PBXGroup;
+			children = (
+				D5A55753194AA405004F9CBC /* BirdWatching */,
+				D5A55775194AA405004F9CBC /* BirdWatchingTests */,
+				D5A5574C194AA405004F9CBC /* Frameworks */,
+				D5A5574B194AA405004F9CBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5A5574B194AA405004F9CBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5A5574A194AA405004F9CBC /* BirdWatching.app */,
+				D5A5576E194AA405004F9CBC /* BirdWatchingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5A5574C194AA405004F9CBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5A5574D194AA405004F9CBC /* Foundation.framework */,
+				D5A5574F194AA405004F9CBC /* CoreGraphics.framework */,
+				D5A55751194AA405004F9CBC /* UIKit.framework */,
+				D5A5576F194AA405004F9CBC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5A55753194AA405004F9CBC /* BirdWatching */ = {
+			isa = PBXGroup;
+			children = (
+				D5A5575C194AA405004F9CBC /* BirdsAppDelegate.h */,
+				D5A5575D194AA405004F9CBC /* BirdsAppDelegate.m */,
+				D5A5575F194AA405004F9CBC /* Main.storyboard */,
+				D5A55762194AA405004F9CBC /* BirdsMasterViewController.h */,
+				D5A55763194AA405004F9CBC /* BirdsMasterViewController.m */,
+				D5A55765194AA405004F9CBC /* BirdsDetailViewController.h */,
+				D5A55766194AA405004F9CBC /* BirdsDetailViewController.m */,
+				D5A55768194AA405004F9CBC /* Images.xcassets */,
+				D5A55754194AA405004F9CBC /* Supporting Files */,
+			);
+			path = BirdWatching;
+			sourceTree = "<group>";
+		};
+		D5A55754194AA405004F9CBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5A55755194AA405004F9CBC /* BirdWatching-Info.plist */,
+				D5A55756194AA405004F9CBC /* InfoPlist.strings */,
+				D5A55759194AA405004F9CBC /* main.m */,
+				D5A5575B194AA405004F9CBC /* BirdWatching-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5A55775194AA405004F9CBC /* BirdWatchingTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5A5577B194AA405004F9CBC /* BirdWatchingTests.m */,
+				D5A55776194AA405004F9CBC /* Supporting Files */,
+			);
+			path = BirdWatchingTests;
+			sourceTree = "<group>";
+		};
+		D5A55776194AA405004F9CBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5A55777194AA405004F9CBC /* BirdWatchingTests-Info.plist */,
+				D5A55778194AA405004F9CBC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5A55749194AA405004F9CBC /* BirdWatching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5A5577F194AA405004F9CBC /* Build configuration list for PBXNativeTarget "BirdWatching" */;
+			buildPhases = (
+				D5A55746194AA405004F9CBC /* Sources */,
+				D5A55747194AA405004F9CBC /* Frameworks */,
+				D5A55748194AA405004F9CBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BirdWatching;
+			productName = BirdWatching;
+			productReference = D5A5574A194AA405004F9CBC /* BirdWatching.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5A5576D194AA405004F9CBC /* BirdWatchingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5A55782194AA405004F9CBC /* Build configuration list for PBXNativeTarget "BirdWatchingTests" */;
+			buildPhases = (
+				D5A5576A194AA405004F9CBC /* Sources */,
+				D5A5576B194AA405004F9CBC /* Frameworks */,
+				D5A5576C194AA405004F9CBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5A55774194AA405004F9CBC /* PBXTargetDependency */,
+			);
+			name = BirdWatchingTests;
+			productName = BirdWatchingTests;
+			productReference = D5A5576E194AA405004F9CBC /* BirdWatchingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5A55742194AA405004F9CBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Birds;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "i-revo";
+				TargetAttributes = {
+					D5A5576D194AA405004F9CBC = {
+						TestTargetID = D5A55749194AA405004F9CBC;
+					};
+				};
+			};
+			buildConfigurationList = D5A55745194AA405004F9CBC /* Build configuration list for PBXProject "BirdWatching" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5A55741194AA405004F9CBC;
+			productRefGroup = D5A5574B194AA405004F9CBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5A55749194AA405004F9CBC /* BirdWatching */,
+				D5A5576D194AA405004F9CBC /* BirdWatchingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5A55748194AA405004F9CBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A55769194AA405004F9CBC /* Images.xcassets in Resources */,
+				D5A55758194AA405004F9CBC /* InfoPlist.strings in Resources */,
+				D5A55761194AA405004F9CBC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5A5576C194AA405004F9CBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A5577A194AA405004F9CBC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5A55746194AA405004F9CBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A55767194AA405004F9CBC /* BirdsDetailViewController.m in Sources */,
+				D5A5575A194AA405004F9CBC /* main.m in Sources */,
+				D5A5575E194AA405004F9CBC /* BirdsAppDelegate.m in Sources */,
+				D5A55764194AA405004F9CBC /* BirdsMasterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5A5576A194AA405004F9CBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A5577C194AA405004F9CBC /* BirdWatchingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5A55774194AA405004F9CBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5A55749194AA405004F9CBC /* BirdWatching */;
+			targetProxy = D5A55773194AA405004F9CBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D5A55756194AA405004F9CBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5A55757194AA405004F9CBC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D5A5575F194AA405004F9CBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5A55760194AA405004F9CBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5A55778194AA405004F9CBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5A55779194AA405004F9CBC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5A5577D194AA405004F9CBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D5A5577E194AA405004F9CBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5A55780194AA405004F9CBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BirdWatching/BirdWatching-Prefix.pch";
+				INFOPLIST_FILE = "BirdWatching/BirdWatching-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D5A55781194AA405004F9CBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BirdWatching/BirdWatching-Prefix.pch";
+				INFOPLIST_FILE = "BirdWatching/BirdWatching-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D5A55783194AA405004F9CBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BirdWatching.app/BirdWatching";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BirdWatching/BirdWatching-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BirdWatchingTests/BirdWatchingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D5A55784194AA405004F9CBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BirdWatching.app/BirdWatching";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BirdWatching/BirdWatching-Prefix.pch";
+				INFOPLIST_FILE = "BirdWatchingTests/BirdWatchingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5A55745194AA405004F9CBC /* Build configuration list for PBXProject "BirdWatching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5A5577D194AA405004F9CBC /* Debug */,
+				D5A5577E194AA405004F9CBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5A5577F194AA405004F9CBC /* Build configuration list for PBXNativeTarget "BirdWatching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5A55780194AA405004F9CBC /* Debug */,
+				D5A55781194AA405004F9CBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D5A55782194AA405004F9CBC /* Build configuration list for PBXNativeTarget "BirdWatchingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5A55783194AA405004F9CBC /* Debug */,
+				D5A55784194AA405004F9CBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5A55742194AA405004F9CBC /* Project object */;
+}
