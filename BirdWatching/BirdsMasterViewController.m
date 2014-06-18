@@ -1,4 +1,4 @@
-//
+    //
 //  BirdsMasterViewController.m
 //  BirdWatching
 //
@@ -6,12 +6,10 @@
 //  Copyright (c) 2014年 i-revo. All rights reserved.
 //
 
+#import "AddSightingViewController.h"
 #import "BirdsMasterViewController.h"
-
 #import "BirdsDetailViewController.h"
-
 #import "BirdsSightingDataController.h"
-
 #import "BirdsSighting.h"
 
 /*
@@ -126,9 +124,28 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"ShowSightingDetails"]) {
+    if ([[segue identifier] isEqualToString:@"showSightingDetails"]) {
         BirdsDetailViewController *detailViewController = [segue destinationViewController];
         detailViewController.sighting = [self.dataController objectInListAtIndex:[self.tableView indexPathForSelectedRow].row];
+    }
+}
+
+- (IBAction)done:(UIStoryboardSegue *)segue
+{
+    if ([[segue identifier] isEqualToString:@"ReturnInput"]) {
+        AddSightingViewController *addController = [segue sourceViewController];
+        if (addController.birdsSighting) {
+            [self.dataController addBirdSightingWithString:addController.birdsSighting];
+            [[self tableView] reloadData];
+        }
+        [self dismissViewControllerAnimated:YES completion:NULL];
+    }
+}
+
+- (IBAction)cancel:(UIStoryboardSegue *)segue
+{
+    if ([[segue identifier] isEqualToString:@"CancelInput"]) {
+        [self dismissViewControllerAnimated:YES completion:NULL];
     }
 }
 
