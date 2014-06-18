@@ -14,4 +14,7 @@
 
 @property (strong, nonatomic) BirdsSightingDataController *dataController;
 
+- (IBAction)done:(UIStoryboardSegue *)segue;
+- (IBAction)cancel:(UIStoryboardSegue *)segue;
+
 @end
